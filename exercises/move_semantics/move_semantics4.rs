@@ -10,7 +10,7 @@
 // I AM NOT DONE
 
 fn main() {
-    let vec0 = Vec::new();
+    //let vec0 = Vec::new();
 
     let mut vec1 = fill_vec();
 
