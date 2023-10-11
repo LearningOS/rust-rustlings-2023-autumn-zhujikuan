@@ -3,8 +3,6 @@
 // Execute `rustlings hint errors4` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);
 
@@ -21,8 +19,9 @@ impl PositiveNonzeroInteger {
             Err(CreationError::Negative)
         } else if value == 0 {
             Err(CreationError::Zero)
+        } else {
+            Ok(PositiveNonzeroInteger(value as u64))
         }
-        Ok(PositiveNonzeroInteger(value as u64))
     }
 }
 
